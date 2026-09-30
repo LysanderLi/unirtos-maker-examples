@@ -45,7 +45,7 @@ Open a new PowerShell window and run the following commands:
 
 ```PowerShell
 unirtos-cli new -r unirtos-maker-examples
-cd unirtos-maker-examples/ai_chatbot
+cd unirtos-maker-examples/voice_chatbot
 ```
 
 ### Modifying Configuration Parameters
