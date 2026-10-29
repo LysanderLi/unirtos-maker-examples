@@ -92,12 +92,7 @@ Hardware configuration is centralized in [main/inc/config/board_config.h](main/i
 | Matrix layout | `BOARD_MATRIX_SERPENTINE`, `BOARD_MATRIX_ORIGIN_TOP` | Match the LED wiring order and origin. |
 | Gravity mapping | `BOARD_GRAV_MX_AX/AY/AZ`, `BOARD_GRAV_MY_AX/AY/AZ` | Map sensor acceleration to screen coordinates according to the mounting orientation. |
 | Brightness | `APP_MASTER_BRIGHTNESS` | Overall display brightness; the existing project description specifies 36. |
-| LED output limit | `APP_POWER_LIMIT_SUM` | Limits the aggregate LED output values; not a substitute for electrical protection or a correctly rated supply. |
-| Render and sample periods | `APP_RENDER_PERIOD_MS`, `APP_IMU_PERIOD_MS` | Control rendering and sensor sampling intervals. |
-| Sensor dead zone | `APP_IMU_DEADZONE_MG` | Reduces drift while stationary; the existing description specifies 60 mG. |
-| Fluid performance | `APP_FLUID_SUBSTEPS`, `APP_FLUID_PRESSURE_ITERS`, `APP_FLUID_RADIUS_FACTOR` | Balance simulation quality and processing cost. |
-| Fluid profiling | `APP_FLUID_PROFILE` | Enables timing logs for fluid solver stages. |
-| Task scheduling | `APP_RENDER_MIN_YIELD_MS` | Keep a nonzero yield interval so lower-priority system tasks can run. |
+| LED output limit | `APP_POWER_LIMIT_SUM` | Limits the aggregate LED output values. |
 
 Expression bitmaps are defined in [main/src/modes/mode_face.c](main/src/modes/mode_face.c), and spectrum animation parameters are in [main/src/modes/mode_spectrum.c](main/src/modes/mode_spectrum.c). Fluid gravity strength, FLIP blending, and initial fill parameters are in [main/src/gfx/fluid2d.c](main/src/gfx/fluid2d.c).
 
@@ -133,8 +128,6 @@ Flash the generated firmware to the development board with the QFlash tool.
 | Long press in gravity or spectrum mode | No mode change. |
 | Observe spectrum mode | Animated columns and peaks without audio input. |
 | Observe the heart expression | Heart size changes to produce a beating animation. |
-
-6. Run continuously for more than 60 seconds and check for unexpected restarts or watchdog timeouts. Review the periodic `stats:` log for mode, frame rate, transmitted frames, dropped frames, and SPI errors. For a longer stability check, observe the project for 30 minutes.
 
 The following log fragments are examples; actual values depend on the hardware and configuration:
 

@@ -90,13 +90,7 @@ fluid_matrix_lamp/
 | 硬件接线 | `board_config.h`中的引脚与总线定义 | 对应矩阵、传感器和按键的实际接线。 |
 | 矩阵布局 | `BOARD_MATRIX_SERPENTINE`、`BOARD_MATRIX_ORIGIN_TOP` | 配置LED走线顺序和起点。 |
 | 重力映射 | `BOARD_GRAV_MX_AX/AY/AZ`、`BOARD_GRAV_MY_AX/AY/AZ` | 根据安装方向，将传感器加速度映射至屏幕坐标。 |
-| 整体亮度 | `APP_MASTER_BRIGHTNESS` | 控制显示亮度，原有说明中的配置值为36。 |
-| LED输出限制 | `APP_POWER_LIMIT_SUM` | 限制LED输出值总和，不能替代电气保护或满足负载要求的电源。 |
-| 渲染与采样周期 | `APP_RENDER_PERIOD_MS`、`APP_IMU_PERIOD_MS` | 控制画面渲染与传感器采样间隔。 |
-| 传感器死区 | `APP_IMU_DEADZONE_MG` | 减少静止时的漂移，原有说明中的配置值为60 mG。 |
-| 流体性能 | `APP_FLUID_SUBSTEPS`、`APP_FLUID_PRESSURE_ITERS`、`APP_FLUID_RADIUS_FACTOR` | 平衡仿真效果与计算开销。 |
-| 流体性能分析 | `APP_FLUID_PROFILE` | 开启流体求解各阶段的耗时日志。 |
-| 任务调度 | `APP_RENDER_MIN_YIELD_MS` | 保持非零让步时间，确保低优先级系统任务能够运行。 |
+| 整体亮度 | `APP_MASTER_BRIGHTNESS` | 控制显示亮度。 |
 
 表情位图位于[main/src/modes/mode_face.c](main/src/modes/mode_face.c)，频谱动画参数位于[main/src/modes/mode_spectrum.c](main/src/modes/mode_spectrum.c)。流体重力强度、FLIP混合比例和初始填充参数位于[main/src/gfx/fluid2d.c](main/src/gfx/fluid2d.c)。
 
@@ -132,8 +126,6 @@ SUCCESS: Unirtos project built successfully!
 | 重力或频谱模式下长按 | 不切换模式。 |
 | 观察频谱模式 | 无需音频输入即可显示动态柱形与峰值。 |
 | 观察爱心表情 | 爱心大小循环变化，呈现跳动效果。 |
-
-6. 连续运行超过60秒，检查是否出现意外重启或看门狗超时。观察周期性的`stats:`日志，核对模式、帧率、发送帧数、丢帧及SPI错误情况；长期稳定性验证可持续观察30分钟。
 
 以下为日志片段示例，实际数值随硬件和配置变化：
 
