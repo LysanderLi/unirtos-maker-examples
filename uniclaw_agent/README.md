@@ -8,6 +8,8 @@ Using UniRTOS as its edge runtime, this project combines LLM-based conversation 
 
 This project demonstrates UniRTOS capabilities in LLM-based conversation and reasoning, tool-call orchestration, multi-channel access, edge-side environmental sensing and device control, deployment across Quectel modules, and feature extensibility. It can serve as a reference example for edge AI agents, intelligent interactive terminals, and edge-cloud collaboration systems.
 
+<img src="./media/uniclaw.png" style="zoom:80%;" />
+
 ## Development Resources
 
 | **Resource** | **Quantity** | **Description** | **How to Obtain** |
@@ -174,3 +176,10 @@ Send a message to the configured bot in the Feishu app. The Agent processes the 
 ### Environmental Alerts
 
 When the temperature or humidity exceeds its threshold, or a flame is detected, the device sends an alert event to the Agent. The Agent generates a notification and sends it to the user through the active channel, enabling unattended environmental monitoring.
+
+## Community & Support
+
+- [UniRTOS Community](https://forumschinese.quectel.com/c/66-category/66): Ask questions and share projects in the official forum (Chinese).
+- [Quectel Forums](https://forums.quectel.com/): Discuss Quectel modules in English.
+- [Report an Issue](https://github.com/UniRTOS/unirtos-maker-examples/issues): Report code or documentation problems with reproduction steps.
+- [Contribute a Fix or Example](https://github.com/UniRTOS/unirtos-maker-examples/pulls): Submit a pull request with a summary and verification results.

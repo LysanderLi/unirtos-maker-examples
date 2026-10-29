@@ -8,6 +8,8 @@
 
 该项目重点展示UniRTOS在SPI、I2C、GPIO和多任务协同方面的能力，可作为交互灯具、重力感应显示和LED矩阵应用的参考示例。
 
+![](./media/fluid.png)
+
 ## 开发资源
 
 | 资源名称 | 数量 | 简要描述 | 获取方法 |
@@ -138,6 +140,13 @@ SUCCESS: Unirtos project built successfully!
 
 矩阵不亮时，优先检查供电、共地、DIN输入方向和PIN 67接线。校准或重力方向异常时，先保持开发板水平静止并重启，再检查I2C接线和轴向映射。
 
+## 社区与支持
+
+- [UniRTOS 社区](https://forumschinese.quectel.com/c/66-category/66)：在官方中文论坛交流问题、分享项目。
+- [移远英文论坛](https://forums.quectel.com/)：使用英文交流移远模组相关问题。
+- [问题反馈](https://github.com/UniRTOS/unirtos-maker-examples/issues)：反馈代码或文档问题，并提供复现步骤。
+- [贡献修复或新示例](https://github.com/UniRTOS/unirtos-maker-examples/pulls)：提交 Pull Request，附上改动说明和验证结果。
+
 ## 许可证
 
-项目许可证及第三方归属说明见[LICENSE](LICENSE)和[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)，其中包括基于[embedded-fluid2d](https://github.com/ccbycc/embedded-fluid2d)移植的流体求解器。
+第三方归属说明见[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)，其中包括基于[embedded-fluid2d](https://github.com/ccbycc/embedded-fluid2d)移植的流体求解器。

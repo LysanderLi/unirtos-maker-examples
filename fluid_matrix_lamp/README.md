@@ -8,6 +8,8 @@ The project combines motion sensing, LED matrix rendering, and single-button int
 
 This example demonstrates UniRTOS SPI, I2C, GPIO, and multitasking capabilities, and serves as a reference for interactive lamps, motion-controlled displays, and LED matrix applications.
 
+![](./media/fluid.png)
+
 ## Development Resources
 
 | Resource | Quantity | Description | How to Obtain |
@@ -140,6 +142,13 @@ The following log fragments are examples; actual values depend on the hardware a
 
 If the matrix remains dark, check the supply, common ground, DIN direction, and PIN 67 connection first. If calibration or gravity direction is incorrect, restart with the board horizontal and still, then check the I2C wiring and axis mapping.
 
+## Community & Support
+
+- [UniRTOS Community](https://forumschinese.quectel.com/c/66-category/66): Ask questions and share projects in the official forum (Chinese).
+- [Quectel Forums](https://forums.quectel.com/): Discuss Quectel modules in English.
+- [Report an Issue](https://github.com/UniRTOS/unirtos-maker-examples/issues): Report code or documentation problems with reproduction steps.
+- [Contribute a Fix or Example](https://github.com/UniRTOS/unirtos-maker-examples/pulls): Submit a pull request with a summary and verification results.
+
 ## License
 
-See [LICENSE](LICENSE) and [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for the project license and third-party attribution, including the fluid solver derived from [embedded-fluid2d](https://github.com/ccbycc/embedded-fluid2d).
+See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for the third-party attribution, including the fluid solver derived from [embedded-fluid2d](https://github.com/ccbycc/embedded-fluid2d).

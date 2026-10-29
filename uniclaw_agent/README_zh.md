@@ -8,6 +8,8 @@ UniClaw端侧AI智能体方案是一个基于UniRTOS构建的端侧多通道LLM 
 
 该项目重点展示UniRTOS在大模型对话推理、工具调用编排、多通道接入、端侧环境感知与设备控制、跨移远模组部署和功能扩展方面的能力，可作为端侧AI Agent、智能交互终端和端云协同系统的参考示例。
 
+<img src="./media/board_en.png" style="zoom:80%;" />
+
 ## 开发资源
 
 | **资源名称**     | **数量** | **简要描述**                                                 | **获取方法**                                                 |
@@ -174,3 +176,10 @@ config set channels.feishu.app_secret xxxxxxxxxxxxxxxx
 ### 环境告警
 
 当环境温度、湿度超过阈值或检测到火焰时，设备会主动向Agent推送告警事件，Agent据此生成提醒消息并通过当前通道通知用户，实现无人值守的环境看护。
+
+## 社区与支持
+
+- [UniRTOS 社区](https://forumschinese.quectel.com/c/66-category/66)：在官方中文论坛交流问题、分享项目。
+- [移远英文论坛](https://forums.quectel.com/)：使用英文交流移远模组相关问题。
+- [问题反馈](https://github.com/UniRTOS/unirtos-maker-examples/issues)：反馈代码或文档问题，并提供复现步骤。
+- [贡献修复或新示例](https://github.com/UniRTOS/unirtos-maker-examples/pulls)：提交 Pull Request，附上改动说明和验证结果。
